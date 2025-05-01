@@ -1,8 +1,11 @@
 # Maelstrom Distributed Systems Training in Rust 🚀🦀
 
-This repository contains my Rust implementations of distributed systems challenges from the excellent [Fly.io Distributed Systems Series](https://fly.io/dist-sys/1/), tested using [Jepsen's Maelstrom](https://github.com/jepsen-io/maelstrom) framework.
+This repository contains my Rust implementations of distributed systems challenges from the
+excellent [Fly.io Distributed Systems Series](https://fly.io/dist-sys/1/), tested
+using [Jepsen's Maelstrom](https://github.com/jepsen-io/maelstrom) framework.
 
-The goal of this project is to learn core distributed systems concepts like message passing, broadcast, causal consistency, and fault tolerance by building small, verifiable nodes that pass Maelstrom's rigorous tests.
+The goal of this project is to learn core distributed systems concepts like message passing, broadcast, causal
+consistency, and fault tolerance by building small, verifiable nodes that pass Maelstrom's rigorous tests.
 
 ## 🧠 What You'll Find Here
 
@@ -12,11 +15,11 @@ The goal of this project is to learn core distributed systems concepts like mess
 
 ## 📚 Challenge Checklist
 
-| Challenge    | Description                     | Status         |
-| ------------ | ------------------------------- | -------------- |
-| `echo`       | Echoes back the input message   | ✅ Completed   |
-| `unique-ids` | Generates unique IDs on request | 🔄 In Progress |
-|              |
+| Challenge    | Description                            | Status         |
+|--------------|----------------------------------------|----------------|
+| `echo`       | Echoes back the input message          | ✅ Completed    |
+| `unique-ids` | Generates unique IDs on request        | ✅ Completed    |
+| `broadcast`  | Broadcasts messages across the cluster | 🔄 In Progress |
 
 ## 🛠️ Getting Started
 
@@ -29,7 +32,7 @@ The goal of this project is to learn core distributed systems concepts like mess
 
 ```bash
 cd challenges/echo
-maelstrom test -w echo --bin ./target/debug/echo --node-count 1 --time-limit 10
+maelstrom test -w echo --bin target/debug/echo --nodes n1 --time-limit 10 --log-stderr
 ```
 
 ## 📁 Each challenge has its own directory with a binary and config.
@@ -40,7 +43,8 @@ maelstrom test -w echo --bin ./target/debug/echo --node-count 1 --time-limit 10
 
 ## 📈 Why I Built This
 
-Distributed systems are hard, but test harnesses like Maelstrom make it possible to experiment safely. This project is both a personal learning journey and a resource for others learning Rust and distributed systems.
+Distributed systems are hard, but test harnesses like Maelstrom make it possible to experiment safely. This project is
+both a personal learning journey and a resource for others learning Rust and distributed systems.
 
 ## 📬 Contact
 
