@@ -15,11 +15,12 @@ consistency, and fault tolerance by building small, verifiable nodes that pass M
 
 ## 📚 Challenge Checklist
 
-| Challenge    | Description                            | Status         |
-|--------------|----------------------------------------|----------------|
-| `echo`       | Echoes back the input message          | ✅ Completed    |
-| `unique-ids` | Generates unique IDs on request        | ✅ Completed    |
-| `broadcast`  | Broadcasts messages across the cluster | 🔄 In Progress |
+| Challenge    | Description                              | Status         |
+|--------------|------------------------------------------|----------------|
+| `echo`       | Echoes back the input message            | ✅ Completed    |
+| `unique-ids` | Generates unique IDs on request          | ✅ Completed    |
+| `broadcast`  | Broadcasts messages across the cluster   | ✅ Completed    |
+| `grow-only`  | Implements a stateless grow-only counter | 🔄 In Progress |
 
 ## 🛠️ Getting Started
 
